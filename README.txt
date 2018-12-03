@@ -1,1 +1,0 @@
-Best to run in Mozilla Firefox.

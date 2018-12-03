@@ -37,7 +37,7 @@ var brick = {
     vy: 15,
     draw() {
         var img = new Image();
-        img.src = 'https://i.pinimg.com/736x/7d/73/82/7d73826098eaeeeef24203ce3da6bf92.jpg';
+        img.src = './assets/board.jpg';
         ctx.drawImage(img, this.x, this.y, 20, 120);
     }
 }
@@ -48,7 +48,7 @@ var brick2 = {
     color: "rgb(38, 38, 38)",
     draw() {
         var img = new Image();
-        img.src = 'https://i.pinimg.com/736x/7d/73/82/7d73826098eaeeeef24203ce3da6bf92.jpg';
+        img.src = './assets/board.jpg';
         ctx.drawImage(img, this.x, this.y, 20, 120);
     }
 }
@@ -109,12 +109,12 @@ function gameOver() {
 
 
 var img = new Image();
-img.src = 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Water_texture_1380389_Nevit.jpg';
+img.src = './assets/waterTexture.jpg';
 img.onload = function () {
     ctx.drawImage(img, 0, 20, window.innerWidth, window.innerHeight - 20);
 }
 var img2 = new Image();
-img2.src = 'http://www.techtbh.com/wp-content/uploads/2016/05/Rough-Wooden-Plank-Texture.jpg';
+img2.src = './assets/woodTexture.jpg';
 img2.onload = function () {
     ctx.drawImage(img2, 0, 0, window.innerWidth, 20);
     ctx.drawImage(img2, 0, window.innerHeight - 20, window.innerWidth, 20);
